@@ -1,4 +1,4 @@
-FROM python:3.7.4-stretch
+FROM python:3.7.4-alpine
 LABEL author="Bohdan"
 LABEL version=1.0
 
