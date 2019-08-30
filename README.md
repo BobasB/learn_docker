@@ -4,4 +4,8 @@ Contain examples with Dockerfiles/Docker and Python3.
 
 ### Simple Dockerfile
 - build/push/run simple Docker example with Python app:
-`make 1_Create_Dockerfile`
+```bash
+make 1_Create_Dockerfile
+```
+
+### Web app with Docker

@@ -1,4 +1,6 @@
 FROM python:3.7.4-stretch
+LABEL author="Bohdan"
+LABEL version=1.0
 
 ENV message="It work's!"
 RUN pip install pipenv
