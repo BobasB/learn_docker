@@ -13,3 +13,11 @@ make example_1
 ```
 
 ### Web app with Docker
+- build/tag/push image with Flask app:
+```bash
+make 2_web_in_docker
+```
+- test if it works, execute and open 'http://localhost:5000' in browser. CNTR+C to stop container:
+```bash
+make example_2
+```
