@@ -1,4 +1,5 @@
-FROM python:3.7.4-alpine
+ARG image
+FROM python:${image}-alpine
 LABEL author="Bohdan"
 LABEL version=1.0
 

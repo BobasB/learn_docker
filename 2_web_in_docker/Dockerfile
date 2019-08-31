@@ -1,9 +1,9 @@
-ARG pass_value="Default"
-FROM python:3.7.4-alpine
+ARG image
+FROM python:${image}-alpine
 LABEL author="Bohdan"
 LABEL version=1.0
 
-ENV message=$pass_value
+ENV message="It work's!"
 
 RUN pip install pipenv
 

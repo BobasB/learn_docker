@@ -1,6 +1,7 @@
 # learn_docker
 Contain examples with Dockerfiles/Docker and Python3.
 - compatible with MacOS/Linux;
+- [DockerHub repository](https://cloud.docker.com/repository/registry-1.docker.io/bobas/learn_docker)
 
 ### Simple Dockerfile
 - build/tag/push simple Docker example with Python app:
@@ -13,6 +14,7 @@ make example_1
 ```
 
 ### Web app with Docker
+WE will use simple [Flask](https://palletsprojects.com/p/flask/) web server.
 - build/tag/push image with Flask app:
 ```bash
 make 2_web_in_docker
