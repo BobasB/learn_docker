@@ -5,7 +5,7 @@ Contain examples with Dockerfiles/Docker and Python3.
 ### Simple Dockerfile
 - build/tag/push simple Docker example with Python app:
 ```bash
-make 1_Create_Dockerfile
+make 1_create_dockerfile
 ```
 - test if it works:
 ```bash

@@ -1,4 +1,4 @@
-FOLDERS := 1_Create_Dockerfile 2_web_in_docker
+FOLDERS := 1_create_dockerfile 2_web_in_docker
 DOCKER_REPO := bobas/learn_docker
 
 .PHONY: $(FOLDERS) example_1 example_2
