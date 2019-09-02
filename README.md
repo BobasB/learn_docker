@@ -11,16 +11,27 @@ make 1_create_dockerfile
 ```
 - test if it works:
 ```bash
-make example_1
+make test_image
 ```
 
 ### Web app with Docker
-WE will use simple [Flask](https://palletsprojects.com/p/flask/) web server.
+We will use simple [Flask](https://palletsprojects.com/p/flask/) web server.
 - build/tag/push image with Flask app:
 ```bash
 make 2_web_in_docker
 ```
 - test if it works, execute and open 'http://localhost:5000' in browser. CNTR+C to stop container:
 ```bash
-make example_2
+make test_image
+```
+
+### GOlang app with Docker
+We create simple app which will print message from passes via ENV:
+- build/tag/push image with GOlang app:
+```bash
+make 3_golang_app
+```
+- test if it works:
+```bash
+make test_image
 ```
