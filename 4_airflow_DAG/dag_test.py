@@ -1,18 +1,10 @@
-from datetime import timedelta
-
-import airflow
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.contrib.operators.kubernetes_pod_operator import KubernetesPodOperator
 
-default_args = {
-    'owner': 'airflow',
-    'depends_on_past': False,
-    'start_date': airflow.utils.dates.days_ago(1),
-    'retry_delay': timedelta(minutes=1),
-}
+from common import DEFAULT_ARGS
 
-dag = DAG('helloWorld', schedule_interval='*/5 * * * *', default_args=default_args)
+dag = DAG('helloWorld', schedule_interval='*/5 * * * *', default_args=DEFAULT_ARGS)
 
 t1 = BashOperator(
     task_id='task_1',
