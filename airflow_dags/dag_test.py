@@ -2,7 +2,7 @@ from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.contrib.operators.kubernetes_pod_operator import KubernetesPodOperator
 
-from common import DEFAULT_ARGS
+from airflow_dags.common import DEFAULT_ARGS
 
 dag = DAG('helloWorld', schedule_interval='*/5 * * * *', default_args=DEFAULT_ARGS)
 
