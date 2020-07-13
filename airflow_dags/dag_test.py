@@ -3,7 +3,7 @@ from airflow.operators.bash_operator import BashOperator
 from airflow.contrib.operators.kubernetes_pod_operator import KubernetesPodOperator
 
 import sys
-sys.path.append('/usr/local/airflow/dags/repo')
+print(sys.path)
 
 from airflow_dags.common import DEFAULT_ARGS
 
