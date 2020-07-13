@@ -5,9 +5,9 @@ from airflow.contrib.operators.kubernetes_pod_operator import KubernetesPodOpera
 import sys
 sys.path.append('/usr/local/airflow/dags/repo')
 
-import airflow_dags.common.DEFAULT_ARGS as a
+from airflow_dags.common import DEFAULT_ARGS
 
-dag = DAG('helloWorld', schedule_interval='*/5 * * * *', default_args=a)
+dag = DAG('helloWorld', schedule_interval='*/5 * * * *', default_args=DEFAULT_ARGS)
 
 t1 = BashOperator(
     task_id='task_1',
